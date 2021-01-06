@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Type Errors and More...`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Santosh Joseph`,
+      summary: `If I'm not coding then I'm playing poker or golf.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `My thoughts in some random manner.`,
+    siteUrl: `https://www.typeerror.net`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `santoshjoseph12`,
     },
   },
   plugins: [
