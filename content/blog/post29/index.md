@@ -3,9 +3,9 @@ title: "Which is faster? 3 ways to loop in JS"
 path: "/javascript-loops"
 tags: ["javascript"]
 featuredImage: "./image29.jpg"
-excerpt: Javascript loops
+description: Javascript loops
 created: 2020-05-01
-updated: 2021-01-02
+date: 2021-01-02
 ---
 
 I wrote some code recently and I was iterating over an array and was using `forEach`. Seems pretty simple right?

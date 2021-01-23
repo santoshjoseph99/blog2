@@ -3,17 +3,18 @@ title: "Preact & Mobx Part 2"
 path: "/preact-mobx-part2"
 tags: ["preact", "mobx"]
 featuredImage: "./image13.jpg"
-excerpt: Small tutorial for preact & mobx
+description: Small tutorial for preact & mobx
 created: 2018-04-29
-updated: 2018-04-29
+date: 2018-04-29
 ---
 
-Testing is very important and this post will describe what the best (or simplest) way to go about doing that.  We'll do some unit testing and some pseudo integration testing with a DOM emulation library (jsdom).
+Testing is very important and this post will describe what the best (or simplest) way to go about doing that. We'll do some unit testing and some pseudo integration testing with a DOM emulation library (jsdom).
 
 We are going to start by installing a few packages needed for testing:
 `npm install --save-dev mocha preact-jsx-chai sinon sinon-chai jsdom chai lodash`
 
-Lets do some minor refactoring.  Add this to the `CountStore` class:
+Lets do some minor refactoring. Add this to the `CountStore` class:
+
 ```
   incCount() {
     this.count++;
@@ -22,9 +23,11 @@ Lets do some minor refactoring.  Add this to the `CountStore` class:
     this.count--;
   }
 ```
-Why?  Well, its going to easier to test if we can stub out functionality.
+
+Why? Well, its going to easier to test if we can stub out functionality.
 
 Also in CountUi class lets call these methods:
+
 ```
   handleInc() {
     this.props.store.incCount();
@@ -37,6 +40,7 @@ Also in CountUi class lets call these methods:
 Also lets create files for the store and ui. This is needed so we can test each part separately.
 Create `store.js` and 'count.js':
 `store.js:`
+
 ```
 const {extendObservable} = require('mobx');
 
@@ -56,7 +60,9 @@ class CountStore {
 
 module.exports = CountStore;
 ```
+
 `count.js:`
+
 ```
 const { createElement, div, button, input } = require('preact-hyperscript');
 const { Component } = require('preact');
@@ -80,7 +86,9 @@ const CountUi = observer(class CountUi extends Component {
 
 module.exports = CountUi;
 ```
+
 `index.js` is now the following:
+
 ```
 
 const { createElement } = require('preact-hyperscript');
@@ -96,7 +104,6 @@ render(
   document.getElementById('app')
 );
 ```
-
 
 Lets create a setup file for mocha (mostly copied from the Enzyme project).
 create a `test` directory and create `setup.js` there.
@@ -142,9 +149,11 @@ _.extend(context, moduleOutput);
 
 module.exports = moduleOutput;
 ```
+
 All of these things we export out of the setup.js file, we can then use them in our test file.
 
 create a test file: `count.test.js`
+
 ```
 const { createElement } = require('preact-hyperscript');
 const { render, Component } = require('preact');
@@ -198,6 +207,7 @@ describe('Count', function () {
 
 });
 ```
+
 The first couple of tests just do a simple check for some exact text in the component.
 Then last two tests use `jsdom` to send click events and then we test to see if our methods on the store get called.
 
@@ -211,4 +221,3 @@ You can find the code on [Github](https://github.com/santoshjoseph99/preact-mobx
 You can view the live site [here](http://preact-mobx-counting.surge.sh/). Thanks to [surge](https://surge.sh/)
 
 Next post, lets talk about MobX's computed values.
-

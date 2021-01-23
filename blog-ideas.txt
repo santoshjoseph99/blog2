@@ -1,0 +1,40 @@
+
+Readability, Performance, Maintainability (Extenstibilty), Testability
+RPMT - RTPM / RPET, REPT, TEPR, PETR
+* forget the acroynmn and just talk about each category and why its important
+
+Android Learnings (using Kotlin, Android Studio)
+* write an article on how to build an app (what kind?)
+* CRUD - boring
+* hooking up with db, and firebase
+* auth
+
+Design Patterns overview (for Refactorings)
+* example: ?
+
+Introduction to Algorithms in Kotlin?
+* try a complex algorithm
+
+How to succeed in a big company?
+* impact
+* being proactive
+* helping people
+* getting feedback
+
+Coding at work?
+* coding for features vs engineering
+
+Etherum app
+* how to write a gambling app using alt coin?
+
+What is bitcoin?
+* history
+* overview
+* programming
+* opinions
+
+War game tutorial using Flutter
+
+War game tutorial using Beeware?
+
+

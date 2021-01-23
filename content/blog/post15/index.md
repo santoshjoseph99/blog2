@@ -2,9 +2,9 @@
 title: "MVVM"
 path: "/mvvm"
 tags: ["mvc", "mvp", "mvvm"]
-excerpt: On MVVM
+description: On MVVM
 created: 2021-01-11
-updated: 2021-01-11
+date: 2021-01-11
 ---
 
 MVVM, first introduced in a blog [post](https://docs.microsoft.com/en-us/archive/msdn-magazine/2009/february/patterns-wpf-apps-with-the-model-view-viewmodel-design-pattern) which described a better way for a complex UI application to handle events and send updates to the UI.

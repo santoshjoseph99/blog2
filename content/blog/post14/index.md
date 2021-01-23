@@ -3,22 +3,25 @@ title: "Preact & Mobx Part 3"
 path: "/preact-mobx-part3"
 tags: ["preact", "mobx"]
 featuredImage: "./image14.jpg"
-excerpt: Small tutorial for preact & mobx
+description: Small tutorial for preact & mobx
 created: 2018-05-22
-updated: 2018-05-22
+date: 2018-05-22
 ---
 
 We'll look at a cool feature from MobX called computed values.
-These are values which are calculated from either existing state or other computed values.  For our example lets show a message if the count is higher then 5.
+These are values which are calculated from either existing state or other computed values. For our example lets show a message if the count is higher then 5.
 So add the following to `store.js` under the `count: 0` statement:
+
 ```
       highCount: computed(() => {
         return this.count > 5;
       })
 ```
+
 Also add the `computed` to the import (from the mobx lib).
 
 To show and hide our message lets create a file called `style.css` and add the following:
+
 ```
 
 .hide-msg {
@@ -29,16 +32,20 @@ To show and hide our message lets create a file called `style.css` and add the f
   display: block;
 }
 ```
+
 Don't forget to add `styles.css` to `index.html`.
 
 Now we will add code to check the `highCount` condition and when its true then we will show the message:
+
 ```
     let message = div('.hide-msg', 'Message is > 5!');
     if(store.highCount) {
       message = div('.show-msg', 'Message is > 5!');
     }
 ```
+
 and add `message` as the last element:
+
 ```
       input({ type: 'text', readonly: true, value: store.count }),
       message

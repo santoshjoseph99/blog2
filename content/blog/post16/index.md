@@ -2,9 +2,9 @@
 title: "Code Readability"
 path: "/code-readability"
 tags: ["code", "quality", "readability"]
-excerpt: On Readability
+description: On Readability
 created: 2021-01-15
-updated: 2021-01-17
+date: 2021-01-17
 ---
 
 So we write code for a computer to "read" but we spend a lot of time _reading_ code.

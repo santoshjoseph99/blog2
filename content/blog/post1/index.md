@@ -3,12 +3,13 @@ title: "Coffeescript Tidbit: '?' vs 'or'"
 path: "/coffescript-tidbit"
 tags: ["Coffescript"]
 featuredImage: "./image1.jpg"
-excerpt: A little snippet to understand coffescript.
+description: A little snippet to understand coffescript.
 created: 2017-07-22
-updated: 2017-07-22
+date: 2017-07-22
 ---
 
 If you use the `?` operator to check for the existence of a variable like this: `a?.b` then you are using it right because the javascript looks like this:
+
 ```
 if (typeof a !== "undefined" && a !== null) {
   a.b;
