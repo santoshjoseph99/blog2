@@ -48,3 +48,4 @@ Next post we will get into `Go` game logic.
 2. Go through the React Native [docs](https://reactnative.dev/docs/getting-started).
 3. This [repo](https://github.com/santoshjoseph99/ReactNativeGo) will have the code for the tutorial. Each blog post will be tagged by the following format: partX.
 4. Read up on [TDD](https://en.wikipedia.org/wiki/Test-driven_development) if you haven't participated in modern programming 😃.
+5. Important step: we are going to use [Expo](https://docs.expo.io). Read more about it!
