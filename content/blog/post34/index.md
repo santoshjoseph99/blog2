@@ -580,12 +580,12 @@ We won't be covering every case, I'll leave that to the reader.
 ### Exercises
 
 1. What happens when there are multiple ties? Does the code work? Write a test for player 1 and then get that to work, then write the test for player 2.
-2. How about an edge case? Write a test when player 1 is at the last card and loses. Return the winning result. Write that test for player 2.
-3. How about when there is a tie and one player doesn't have enough cards? Write that test.
+2. How about when there is a tie and one player doesn't have enough cards? Write that test.
+3. Write tests for game winning situations.
 4. Are there any other edge cases?
 5. When there is a tie, we always put the cards in the victor's deck in an ordered way. Should we randomize that?
 
 ### Next Part
 
 1. We will go over the exercises and check out test coverage.
-2. Start getting the UI up.
+2. Refactoring.
