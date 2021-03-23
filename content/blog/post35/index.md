@@ -230,7 +230,7 @@ That should work. Make you write a test case and code for the opposite case.
 ```
 
 So the `--coverage` flag will generate a directory called coverage. o If you look in the coverage directory you will see a `lcov-report` directory and open the `index.html` file there.
-![Jest Coverage](./images/jest-coverage.png)
+![Jest Coverage](../../assets/images/jest-coverage.png)
 Strangely our test coverage isn't 100%! Is that a problem? Not really. Click on `ReactNativeWarGame/game` and you will notice that `GameResult.js` has 0%. If you look at that file, it is just basically constants. No reason to have tests there. Unless that file/class has any logic then its perfectly fine not to have a test.
 Also we don't want to clutter our repo with jest coverage files, so open up `.gitignore` and add:
 `coverage/` so we don't add all of these files. Read a little more about test coverage [here](https://www.emgoto.com/jest-code-coverage/).
