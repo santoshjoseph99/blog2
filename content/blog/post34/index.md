@@ -589,3 +589,5 @@ We won't be covering every case, I'll leave that to the reader.
 
 1. We will go over the exercises and check out test coverage.
 2. Refactoring.
+
+You see the code for this part in the repo by running the following command: `git checkout part1`

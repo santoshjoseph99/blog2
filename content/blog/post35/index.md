@@ -251,3 +251,5 @@ Exercise: Take a look over the existing code and figure what can be to make it m
 
 1. Refactoring results.
 2. Setting up the UI.
+
+You see the code for this part in the repo by running the following command: `git checkout part2`
