@@ -1,9 +1,9 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import { Disqus } from "gatsby-plugin-disqus"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
@@ -60,6 +60,16 @@ const BlogPostTemplate = ({ data, location }) => {
           </li>
         </ul>
       </nav>
+      <Disqus
+        config={{
+          /* Replace PAGE_URL with your post's canonical URL variable */
+          url: post.frontmatter.url,
+          /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+          identifier: post.frontmatter.identifier,
+          /* Replace PAGE_TITLE with the title of the page */
+          title: post.frontmatter.title,
+        }}
+      />
     </Layout>
   )
 }
