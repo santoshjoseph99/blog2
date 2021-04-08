@@ -383,7 +383,9 @@ const Card = () => {
 export default Card;
 ```
 
-So with React Native its really hard to change the card dynamically with local cards. If we put these cards on a server and then it is supported to change the card by changing the uri field. We are keeping the cards local to the app because it is more performant and we don't have to rely on a internet connection. So, we end up creating a new module called `Cards.js` which load all the png files.
+So with React Native its really hard to change the card dynamically with local cards. If we put these card images on a server and then it is supported to change the card by changing the uri field of the source.
+
+We are keeping the cards local to the app because it is more performant and we don't have to rely on a internet connection. So, we end up creating a new module called `Cards.js` which load all the card image files.
 `Cards.js`
 
 ```
@@ -504,17 +506,18 @@ cardMap.set('2d', D2);
 export default cardMap;
 ```
 
+This module also creates a map which we conveniently will map a string (the `Card` class's `toShortString` method) to the image.
+
 Go ahead and run this and click on the buttons. The cards should change.
-
-Open `CurrentCards.js`
-
-And here is the result:
+![Cards](../../assets/images/cards.png)
 
 ### Exercises
 
 - Our war `Game` class is pure Javascript. How can we set it up in such a way that this class can be
   used by any Javascript application? Through npm packages. So do some research. There are a lot of
   articles about how to accomplish this.
+- The button in the code above will change the card once. What would you do if you wanted to show a
+  random card? Or if you used the `Deck` class?
 
 ### Next Part
 
