@@ -9,6 +9,7 @@ description: "With React Native"
 ### Research
 
 Let investigate what the rules of are and also get an idea of the variations of the game.
+
 Read up on the following links (and maybe do some of your own research):
 
 - https://boredombusted.com/war-card-game-rules-variations/
@@ -17,12 +18,18 @@ Read up on the following links (and maybe do some of your own research):
 
 ### Scope out problem
 
-My main question is what to do when one player runs out of cards in a game of war. I think the solution to let the other player (one with more cards) to win is completely fine. You can go ahead and code this with a complicated route: assume that the player with less cards will get to flip up the last card. So if the player 1 had 2 cards left and the 1st one is a tie, then the 2nd card (the last one for player 1) will get flipped up, while the other player has to put down 3 cards and flip the 4th card up.
+My main question is what to do when one player runs out of cards in a game of war. I think the solution to let the other player (one with more cards) to win is completely fine.
+
+You can go ahead and code this with a complicated route: assume that the player with less cards will get to flip up the last card, so if the player 1 had 2 cards left and the 1st one is a tie, then the 2nd card (the last one for player 1) will get flipped up, while the other player has to put down 3 cards and flip the 4th card up.
 
 ### UI and Logic Interaction
 
-The real question that needs to be answered is what is the logic flow between the UI (player) and the game. What happens when a player presses
-the proverbial 'Play' button and what the UI should show. So what about this (this might change): Each player starts with an equal amount of cards. When a round of play happens (after the play button is pressed), then the game should
+The real question that needs to be answered is what is the logic flow between the UI (player) and the game.
+
+What happens when a player presses
+the proverbial 'Play' button and what the UI should show.
+
+What about this (this might change): Each player starts with an equal amount of cards. When a round of play happens (after the play button is pressed), then the game should
 send the UI the 2 cards and a result of the play. Then the UI needs to signal the logic to process
 that play: logic will put the winners card and losers card into their pile (shuffle and place at the end). Then the UI can call 'play' again.
 And so forth.

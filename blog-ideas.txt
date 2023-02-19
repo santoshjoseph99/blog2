@@ -1,13 +1,14 @@
 
 Readability, Performance, Maintainability (Extenstibilty), Testability
 RPMT - RTPM / RPET, REPT, TEPR, PETR
-* forget the acroynmn and just talk about each category and why its important
+* forget the acronym and just talk about each category and why its important
 
 Android Learnings (using Kotlin, Android Studio)
 * write an article on how to build an app (what kind?)
 * CRUD - boring
 * hooking up with db, and firebase
 * auth
+* working with Android for the last year
 
 Design Patterns overview (for Refactorings)
 * example: ?

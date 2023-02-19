@@ -106,7 +106,7 @@ const CARD2_HIGHER = -1;
 const CARDS_TIED = 0;
 ```
 
-Unfortunately javascript doesn't let us define constants in the class. Go ahead and change the constants in the code.
+Unfortunately Javascript doesn't let us define constants in the class. Go ahead and change the constants in the code.
 Another thing I see is the following code:
 
 ```
@@ -187,8 +187,8 @@ update:
   this.addHiddenCards(player2HiddenCards, this.player2.cards);
 ```
 
-Another thing...whenever in the we have numbers, we call them magic numbers...its better
-to create a constant that can be read. So lets go through the rest of the code and see
+Another thing...whenever in the code we have numbers, we call them magic numbers, its better
+to create a constant that can be read or a readable function. So lets go through the rest of the code and see
 what we can replace.
 `if (this.player2.cards.length === 0) {`
 could be replaced with:

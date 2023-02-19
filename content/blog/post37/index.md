@@ -114,7 +114,7 @@ The `WarGame` module will set up the cards and handle actions from the user. The
   }, []);
 ```
 
-And don't forget the empty array argument for `useEffect`, if that is left out basically it will called everytime.
+And don't forget the empty array argument for `useEffect`, if that is left out basically it will called every time.
 We will have a play `Button` which when clicked will get 2 new cards and assign them, so basically what the `useEffect` does but without the `shuffle`:
 
 ```
@@ -129,7 +129,7 @@ const play = () => {
 So try it now...
 
 ```
-mport React from 'react';
+import React from 'react';
 import {StyleSheet, View, Button} from 'react-native';
 import CurrentCards from './CurrentCards';
 import HandResult from './HandResult';
