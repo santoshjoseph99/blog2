@@ -1,7 +1,7 @@
+---
 title: "Tutorial: Game of War, Part 5"
 date: "2022-01-28"
 description: "With React Native"
-
 ---
 
 ## Exercise Results
