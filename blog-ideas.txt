@@ -2,20 +2,6 @@
 Readability, Performance, Maintainability (Extenstibilty), Testability
 RPMT - RTPM / RPET, REPT, TEPR, PETR
 * forget the acronym and just talk about each category and why its important
-
-Android Learnings (using Kotlin, Android Studio)
-* write an article on how to build an app (what kind?)
-* CRUD - boring
-* hooking up with db, and firebase
-* auth
-* working with Android for the last year
-
-Design Patterns overview (for Refactorings)
-* example: ?
-
-Introduction to Algorithms in Kotlin?
-* try a complex algorithm
-
 How to succeed in a big company?
 * impact
 * being proactive
@@ -25,17 +11,27 @@ How to succeed in a big company?
 Coding at work?
 * coding for features vs engineering
 
-Etherum app
-* how to write a gambling app using alt coin?
+* print out a binary tree
 
-What is bitcoin?
-* history
-* overview
-* programming
-* opinions
+Adventures in Tic-Tac-Toe with React
 
-War game tutorial using Flutter
+* simple version
+* headless version - useReducer
+* make general version for NxN grid with X boxes in a row
+* talk about rendering
+* functional programming?
+* use a state management solution (zustand & legend)
+* html canvas for better graphics
+* minmax algorithm for AI
+* use chatgpt? for backend
+* network play (nextjs & mongodb - hosted on vercal)
+* graphics 3D (babylonjs) (three.js)
+* 
 
-War game tutorial using Beeware?
-
-
+React Performance
+* anonymous function for init: useState(() => func())
+* {children}
+* useContext - none
+* suspense
+* useTransition
+* useDeferredValue
