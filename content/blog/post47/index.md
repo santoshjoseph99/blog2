@@ -243,9 +243,7 @@ Check https://testing-library.com/docs/react-testing-library/example-intro for s
 </pre>
 
 ## Next
-These tests work, but I think there is a bug. Try writing a test for a draw. I think there is some logic error due to the fact I didn't test.
-
-So lets figure this out in the next post.
+Lets test from the outside...more like how an user would use the game.
 
 <quote>
 ”If debugging is the process of removing software bugs, then programming must be the process of putting them in" - Edsger Dijkstra</quote>

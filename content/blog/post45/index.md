@@ -193,7 +193,7 @@ const checkTie = (state: GameState[]) => {
 const checkRows = (state: GameState[]) => {
   if (state[0] !== GameState.Empty && state[0] === state[1] && state[1] === state[2]) return true;
   if (state[3] !== GameState.Empty && state[3] === state[4] && state[4] === state[5]) return true;
-  if (state[5] !== GameState.Empty && state[6] === state[7] && state[7] === state[8]) return true;
+  if (state[6] !== GameState.Empty && state[6] === state[7] && state[7] === state[8]) return true;
   return false;
 };
 
